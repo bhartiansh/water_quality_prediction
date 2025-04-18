@@ -1,0 +1,27 @@
+water_quality_prediction/
+│
+├── data/
+│   ├── raw/                        # Original dataset (e.g., from .csv/.xlsx)
+│   └── processed/                  # Cleaned & normalized data
+│
+├── notebooks/
+│   ├── eda.ipynb                   # Exploratory Data Analysis
+│   ├── preprocessing.ipynb         # Data cleaning and feature engineering
+│   ├── model_training.ipynb        # ML model building & evaluation
+│   └── deploy_colab.ipynb          # Colab-ready version if needed
+│
+├── src/
+│   ├── __init__.py
+│   ├── preprocessing.py            # Functions for data cleaning & feature scaling
+│   ├── models.py                   # Model definitions and training scripts
+│   ├── evaluate.py                 # Evaluation metrics and plots
+│   └── thresholds.py               # Threshold comparison logic
+│
+├── results/
+│   ├── figures/                    # Plots and visualizations
+│   └── reports/                    # Summary, performance reports
+│
+├── requirements.txt                # Dependencies list
+├── README.md                       # Project overview and setup
+├── .gitignore                      # Ignore unnecessary files
+└── run.py                          # Script to run whole pipeline from terminal
