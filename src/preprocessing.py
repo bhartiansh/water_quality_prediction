@@ -1,12 +1,14 @@
 import pandas as pd
 
-def load_data(path):
-    return pd.read_csv(path)
+def clean_data(excel_path):
+    # Read the xlsm file
+    df = pd.read_excel(excel_path, engine='openpyxl')
 
-def clean_data(df):
-    df = df.dropna()
-    df['Dates'] = pd.to_datetime(df['Dates'], errors='coerce')
+    # Example cleaning steps
+    df.dropna(inplace=True)  # Remove rows with missing values
+    df = df.drop(columns=['Water Control Zone', 'Station', 'Dates', 'Sample No'], errors='ignore')  # Drop non-numeric
+
+    # Ensure all column names are stripped of extra whitespace
+    df.columns = df.columns.str.strip()
+
     return df
-
-def save_processed_data(df, output_path):
-    df.to_csv(output_path, index=False)
