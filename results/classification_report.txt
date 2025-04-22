@@ -1,9 +1,9 @@
                       precision    recall  f1-score   support
 
-           drinkable       0.96      0.96      0.96       110
-good for marine life       0.88      0.88      0.88        40
-      non consumable       0.60      0.60      0.60         5
+           drinkable       0.92      0.91      0.92      1103
+good for marine life       0.88      0.66      0.75       898
+      non consumable       0.23      0.74      0.35       106
 
-            accuracy                           0.93       155
-           macro avg       0.81      0.81      0.81       155
-        weighted avg       0.93      0.93      0.93       155
+            accuracy                           0.79      2107
+           macro avg       0.67      0.77      0.67      2107
+        weighted avg       0.87      0.79      0.82      2107
