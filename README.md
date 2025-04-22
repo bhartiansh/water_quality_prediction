@@ -13,30 +13,8 @@ The dataset includes parameters such as:
 Water quality parameters
 
 -------------------------------------
-5-day Biochemical Oxygen Demand (mg/L)
-Silica (mg/L)
-Chlorophyll-a μg/L
-pH
-Temperature (C)
-E. coli (cfu/100mL)
-Faecal Coliforms (cfu/100mL)
-Total Phosphorus (mg/L)
-Orthophosphate Phosphorus (mg/L)
-Volatile Suspended Solids (mg/L)
-Phaeo-pigments (μg/L)
-Suspended Solids (mg/L)
-Dissolved Oxygen Saturation (%)
-Dissolved Oxygen (mg/L)
-Salinity (psu)
-Secchi Disc Depth (M)
-Nitrite Nitrogen (mg/L)
-Nitrate Nitrogen (mg/L)
-Ammonia Nitrogen (mg/L)
-Total Nitrogen (mg/L)
-Total Kjeldahl Nitrogen (mg/L)
-Total Inorganic Nitrogen (mg/L)
-Turbidity (NTU)
-Unionized Ammonia (mg/L)
+5-day Biochemical Oxygen Demand (mg/L),Silica (mg/L),Chlorophyll-a μg/L,pH,Temperature (C),E. coli (cfu/100mL),Faecal Coliforms (cfu/100mL),Total Phosphorus (mg/L),Orthophosphate Phosphorus (mg/L),Volatile Suspended Solids (mg/L),Phaeo-pigments (μg/L),Suspended Solids (mg/L),Dissolved Oxygen Saturation (%),Dissolved Oxygen (mg/L),Salinity (psu),Secchi Disc Depth (M),Nitrite Nitrogen (mg/L),Nitrate Nitrogen (mg/L),Ammonia Nitrogen (mg/L),Total Nitrogen (mg/L),Total Kjeldahl Nitrogen (mg/L),Total Inorganic Nitrogen (mg/L),Turbidity (NTU),Unionized Ammonia (mg/L)
+
 
 With thresholds applied to assess water quality.
 
