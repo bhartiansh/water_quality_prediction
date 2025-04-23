@@ -1,12 +1,10 @@
-from sklearn.metrics import classification_report
-import os
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-def evaluate_model(model, label_encoder, X_test, y_test, results_dir):
+def evaluate_model(model, X_test, y_test, label_encoder):
     y_pred = model.predict(X_test)
-    report = classification_report(y_test, y_pred, target_names=label_encoder.classes_)
-
-    os.makedirs(results_dir, exist_ok=True)
-    with open(os.path.join(results_dir, 'classification_report.txt'), 'w') as f:
-        f.write(report)
-
-    print(report)
+    return {
+        'Accuracy': accuracy_score(y_test, y_pred),
+        'Precision': precision_score(y_test, y_pred, average='weighted', zero_division=0),
+        'Recall': recall_score(y_test, y_pred, average='weighted', zero_division=0),
+        'F1-Score': f1_score(y_test, y_pred, average='weighted', zero_division=0),
+    }
