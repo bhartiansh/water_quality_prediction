@@ -11,7 +11,7 @@ def clean_and_label_data(path):
     missing_cols = [col for col in cols_needed if col not in df.columns]
 
     if missing_cols:
-        print(f"[❌ Missing Columns] {missing_cols} in {path}")
+        print(f"[Missing Columns] {missing_cols} in {path}")
         return pd.DataFrame()
 
     for col in cols_needed:
@@ -20,7 +20,7 @@ def clean_and_label_data(path):
     original_len = len(df)
     df.dropna(subset=cols_needed, inplace=True)
     cleaned_len = len(df)
-    print(f"[✅ Cleaned] {path} — Dropped {original_len - cleaned_len} rows with missing key features")
+    print(f"[Cleaned] {path} — Dropped {original_len - cleaned_len} rows with missing key features")
 
     def assign_label(row):
         do = row['Dissolved Oxygen (mg/L)']
